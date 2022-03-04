@@ -1,0 +1,37 @@
+ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pm1.MainPage">
+
+    <StackLayout BackgroundColor="DarkSlateGray" >
+
+        <Frame BackgroundColor="Black" Padding="1" CornerRadius="0">
+            <Label Text="Ingrese la cantiad que desea desglosar" HorizontalTextAlignment="Center" TextColor="White" FontSize="26"/>
+        </Frame>
+
+
+        <Entry BackgroundColor="White" x:Name="numero1" 
+               Placeholder="Ingrese la cantidad"
+               Keyboard="Numeric"
+               />
+
+        <Button TextColor="black" x:Name="Desglosar" 
+                Text="Desglosar"
+                Clicked="Desglosar_Clicked"
+                />
+
+        <Button TextColor="black" x:Name="Borrar"
+                Text="Borrar"
+                Clicked="Borrar_Clicked"
+                />
+        
+        <Frame BackgroundColor="Gray" Padding="1" CornerRadius="0">
+            <Label TextColor="White"
+               Text="0" x:Name="lblresult"
+               HorizontalOptions="Start"
+               FontSize="15" 
+               />
+        </Frame>
+
+    </StackLayout>
+
+</ContentPage>
